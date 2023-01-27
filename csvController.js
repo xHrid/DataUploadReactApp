@@ -22,7 +22,6 @@ async function test(filename)
         for (let i= 0; i < rows.length ; i++) {
             await updateProperty(rows[i]._id, rows[i].sequenceNo);
         }
-        process.exit()
     }).on("error", (error) => console.error(error))
 }
 
